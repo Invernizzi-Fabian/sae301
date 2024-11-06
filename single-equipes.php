@@ -49,14 +49,6 @@
                             }
                         }
                         ?>
-                    </ul>
-                </div>
-
-                <!-- Contenu de l'article -->
-                <div class="content"><?php the_content(); ?></div>
-            </article>
-        <?php endwhile; ?>
-    <?php endif; ?>
 </div>
 
 <?php get_footer(); ?>
