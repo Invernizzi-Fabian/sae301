@@ -15,7 +15,7 @@
 
     <!-- Lien Nous contacter et texte © -->
     <div class="footer-contact">
-        <a href="<?php echo get_permalink(get_page_by_title('Nous contacter')->ID); ?>" class="footer-link">Nous contacter</a>
+        <a href="<?php echo get_permalink(get_page_by_title('nous-contacter')->ID); ?>" class="footer-link">Nous contacter</a>
         <p>@ 2024 NexusBattles. Tous droits réservés.</p>
     </div>
 </footer>

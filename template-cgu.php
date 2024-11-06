@@ -8,7 +8,7 @@ get_header(); ?>
 
 <div class="terms-of-use-container">
     <h1>Conditions Générales d'Utilisation (CGU)</h1>
-    <p><strong>Dernière mise à jour : [date]</strong></p>
+    <p><strong>Dernière mise à jour : 6/11/2024</strong></p>
 
     <p>Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») régissent l'accès et l'utilisation de notre plateforme de gestion de tournoi Esport (ci-après « la plateforme »).</p>
 

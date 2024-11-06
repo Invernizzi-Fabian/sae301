@@ -84,10 +84,7 @@ get_header(); ?>
         </ul>
     </div>
 
-    <!-- Statut du match -->
-    <div class="match-status">
-        <p><strong>Statut :</strong> <?php echo esc_html(get_field('statut')); ?></p>
-    </div>
+    
 </div>
 
 <?php get_footer(); ?>

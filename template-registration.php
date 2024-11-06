@@ -47,67 +47,68 @@ if (isset($_POST['submit'])) {
 <!-- CSS intégré pour le style du formulaire -->
 <style>
     .form-inscription {
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-        text-align: center; /* Centre le contenu du formulaire */
-        margin-bottom: 60px; /* Ajoute de l'espace en dessous du cadre d'inscription */
-    }
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center; /* Centre le contenu du formulaire */
+    margin-bottom: 60px; /* Ajoute de l'espace en dessous du cadre d'inscription */
+}
 
-    .form-title {
-        text-align: center;
-        color: rgb(213, 77, 234); /* Couleur stylisée pour le titre global */
-        margin-bottom: 20px;
-        font-size: 36px; /* Taille du titre agrandie */
-        font-family: 'Arial', sans-serif; /* Changer la police pour plus de style */
-        font-weight: bold; /* Mettre le titre en gras */
-        padding: 20px 0; /* Ajoute de l'espace en haut et en bas du titre */
-    }
+.form-title {
+    text-align: center;
+    color: #A4FFFF; /* Couleur modifiée en bleu clair */
+    margin-bottom: 20px;
+    font-size: 36px; /* Taille du titre agrandie */
+    font-family: 'Arial', sans-serif; /* Changer la police pour plus de style */
+    font-weight: bold; /* Mettre le titre en gras */
+    padding: 20px 0; /* Ajoute de l'espace en haut et en bas du titre */
+}
 
-    .form-inscription label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-        color: black; /* Couleur noire pour les labels */
-    }
+.form-inscription label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black; /* Couleur noire pour les labels */
+}
 
-    .form-inscription input[type="text"],
-    .form-inscription input[type="password"],
-    .form-inscription input[type="email"],
-    .form-inscription input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+.form-inscription input[type="text"],
+.form-inscription input[type="password"],
+.form-inscription input[type="email"],
+.form-inscription input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-    .form-inscription input[type="submit"] {
-        background-color: rgb(213, 77, 234); /* Applique la couleur au bouton */
-        color: white;
-        border: none;
-        cursor: pointer;
-        margin-top: 10px; /* Espace entre le champ de saisie et le bouton */
-    }
+.form-inscription input[type="submit"] {
+    background-color: #A4FFFF; /* Applique la couleur bleu clair au bouton */
+    color: black; /* Texte en noir pour le bouton */
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Espace entre le champ de saisie et le bouton */
+}
 
-    .form-inscription input[type="submit"]:hover {
-        background-color: rgb(176, 64, 193); /* Couleur au survol du bouton */
-    }
+.form-inscription input[type="submit"]:hover {
+    background-color: #8be3e3; /* Couleur plus claire au survol du bouton */
+}
 
-    .error {
-        color: red;
-        margin-bottom: 15px;
-        text-align: center; /* Centre le texte d'erreur */
-    }
+.error {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center; /* Centre le texte d'erreur */
+}
 
-    .success {
-        color: green;
-        margin-bottom: 15px;
-        text-align: center; /* Centre le texte de succès */
-    }
+.success {
+    color: green;
+    margin-bottom: 15px;
+    text-align: center; /* Centre le texte de succès */
+}
+
 </style>
 
 <!-- Titre global -->

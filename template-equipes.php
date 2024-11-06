@@ -3,10 +3,8 @@
 
 get_header();
 ?>
-
+<h1 class="equipesh1">Équipes participant au tournoi</h1>
 <div class="equipes-all">
-    <!-- Titre de la page avec l'image de fond -->
-    <h1>Équipes participant au tournoi</h1>
 
     <!-- Traiter le formulaire de création d'équipe -->
     <?php
@@ -111,18 +109,25 @@ get_header();
 
     <?php if ($the_query->have_posts()) : ?>
         <div class="toutes-les-equipes">
-            
-            <ul>
+            <ul class="equipe-grid">
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                     <li class="equipe-card">
-                        <?php 
-                        $logo_id = get_field('logo'); 
-                        if ($logo_id): 
-                            echo wp_get_attachment_image($logo_id, 'thumbnail', false, ['class' => 'equipe-logo', 'alt' => get_the_title() . ' Logo']);
-                        else: ?>
-                            <p>Aucun logo n'est défini pour cette équipe.</p>
-                        <?php endif; ?>
-                        <h3 class="equipe-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <a href="<?php the_permalink(); ?>" class="equipe-link">
+                            <h3 class="equipe-title"><?php the_title(); ?></h3>
+                            
+                            <?php 
+                            $logo_id = get_field('logo'); 
+                            if ($logo_id): 
+                                echo wp_get_attachment_image($logo_id, 'thumbnail', false, ['class' => 'equipe-logo', 'alt' => get_the_title() . ' Logo']);
+                            else: ?>
+                                <p>Aucun logo n'est défini pour cette équipe.</p>
+                            <?php endif; ?>
+                            
+                            <div class="equipe-stats">
+                                <span class="victoires">Victoires : <?php echo get_field('victoires'); ?></span>
+                                <span class="defaites">Défaites : <?php echo get_field('defaites'); ?></span>
+                            </div>
+                        </a>
                     </li>
                 <?php endwhile; ?>
             </ul>

@@ -10,7 +10,7 @@ get_header(); ?>
     <h1>Politique de Confidentialité</h1>
     <p>Dernière mise à jour : <?php echo date('d F Y'); ?></p>
 
-    <p>Cette Politique de Confidentialité décrit comment [Nom de l'Entreprise] (ci-après « nous ») collecte, utilise, et protège les données personnelles des utilisateurs (ci-après « vous ») de notre plateforme de gestion de tournoi Esport (ci-après « la plateforme »).</p>
+    <p>Cette Politique de Confidentialité décrit comment NexuxBattles (ci-après « nous ») collecte, utilise, et protège les données personnelles des utilisateurs (ci-après « vous ») de notre plateforme de gestion de tournoi Esport (ci-après « la plateforme »).</p>
 
     <h2>1. Informations que nous collectons</h2>
     <p>Nous collectons plusieurs types d'informations, y compris :</p>

@@ -10,19 +10,19 @@ get_header(); ?>
     <h1>Mentions Légales</h1>
 
     <h2>Éditeur du site :</h2>
-    <p><strong>[Nom de l'Entreprise]</strong><br>
-       [Adresse complète]<br>
-       [Numéro de SIRET]<br>
-       [Téléphone]<br>
-       <a href="mailto:[Adresse email de contact]">[Adresse email de contact]</a></p>
+    <p><strong>NexusBattles</strong><br>
+       25 Rue Georges Clémenceau<br>
+       76859465734523<br>
+       0689632137<br>
+       <a href="mailto:[Adresse email de contact]">fabian.invernizzi@edu.univ-fcomte.fr</a></p>
 
     <h2>Hébergeur :</h2>
-    <p><strong>[Nom de l'Hébergeur]</strong><br>
-       [Adresse de l'Hébergeur]<br>
-       [Téléphone de l'Hébergeur]</p>
+    <p><strong>NexusBattles</strong><br>
+    25 Rue Georges Clémenceau<br>
+    0689632137</p>
 
     <h2>Directeur de la publication :</h2>
-    <p>[Nom du Directeur de publication]</p>
+    <p>Fabian INVERNIZZI</p>
 
     <h2>Propriété intellectuelle</h2>
     <p>Tous les contenus présents sur la plateforme, y compris les textes, images, graphiques, et vidéos, sont protégés par des droits de propriété intellectuelle. Toute reproduction ou représentation, totale ou partielle, est interdite sans notre autorisation préalable.</p>
