@@ -3,7 +3,8 @@
 get_header(); ?>
 
 <div class="matches-container">
-    <h1>Tous les Matchs</h1>
+    <!-- Titre de la page avec l'image de fond -->
+    <h2 class="page-match">Suivez les Rencontres à Venir</h2>
 
     <?php
     // Arguments pour récupérer tous les matchs

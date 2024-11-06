@@ -40,9 +40,37 @@ button, input, select, textarea {
     border: none;
 }
 
+.images {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
 
+.bouton {
+    background-color: #D6B33F; /* Couleur de fond */
+    color: #FFFFFF; /* Couleur du texte */
+    border: none; /* Enlever toute bordure existante */
+    padding: 10px 20px; /* Espacement autour du texte */
+    font-size: 16px; /* Taille de la police */
+    font-family: 'Mangold', sans-serif; /* Police d'écriture */
+    border-radius: 15px; /* Bords arrondis */
+    cursor: pointer; /* Curseur de souris sous forme de main */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+    transition: background-color 0.3s ease; /* Transition douce pour la couleur de fond */
+}
 
+/* Effet au survol */
+.bouton:hover {
+    background-color: #b8972d; /* Couleur de fond plus foncée au survol */
+}
 
+.home-conclusion {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;     /* Centre verticalement */
+    margin-top: 25px;
+}
 
 
 
@@ -73,6 +101,88 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+@import url('https://url_du_fichier/SpiegelSans-Trial.css');
+
+body, p, a, u, li {
+    font-family: 'SpiegelSans', sans-serif; /* Appliquer la police SpiegelSans */
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px; /* Taille de police par défaut */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+/* Style du footer */
+.footer {
+    background-color: #000; /* Fond du footer en noir */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centrer tout le contenu */
+    padding: 40px 0; /* Espacement autour du contenu */
+    display: flex; /* Utiliser Flexbox pour centrer */
+    flex-direction: column; /* Aligner les éléments en colonne */
+    align-items: center; /* Centrer horizontalement */
+    justify-content: center; /* Centrer verticalement */
+    min-height: 200px; /* Assurer une hauteur minimale pour le footer */
+    margin-top: 50px;
+}
+
+/* Logo */
+.footer-logo img {
+    max-width: 150px; /* Réduire la taille du logo à 150px */
+    margin-bottom: 30px; /* Augmenter l'espacement sous le logo */
+}
+
+/* Navigation des liens */
+.footer-nav ul {
+    list-style: none; /* Supprimer les puces des éléments de liste */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Utiliser flexbox pour les aligner */
+    flex-direction: column; /* Empiler les liens les uns sous les autres */
+    align-items: center; /* Centrer les liens horizontalement */
+}
+
+.footer-nav li {
+    margin-bottom: 15px; /* Espacement entre les liens */
+}
+
+.footer-link {
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Enlever la décoration de lien */
+    font-weight: bold; /* Mettre les liens en gras */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Souligner au survol */
+}
+
+/* Contact et texte de copyright */
+.footer-contact {
+    margin-top: 30px; /* Augmenter l'espacement au-dessus */
+}
+
+.footer-contact p {
+    margin-top: 10px; /* Espacement entre le lien et le texte */
+    font-size: 14px; /* Taille de police plus petite pour le texte */
+    color: #ccc; /* Couleur grise pour le texte des droits réservés */
+}
+
+
 
 
 
@@ -97,6 +207,7 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     padding : 60px 20px 60px 20px;
     text-align: center;
+    margin-top: 0;
 }
 
 /* Ajustement pour les écrans de bureau */
@@ -127,19 +238,143 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/*CLASSEMENT*/
+/* Titre de la page Classement avec une image de fond */
+.classement-container h1 {
+    font-family: "Beaufort for LOL", sans-serif;
+    font-size: 34px;
+    color: #FFFFFF; /* Couleur du texte */
+    background-image: url('images/Classement.png'); /* Image de fond */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Ajustement pour les écrans de bureau */
+@media (min-width: 768px) {
+    .classement-container h1 {
+        font-size: 48px; /* Taille augmentée pour le desktop */
+        padding: 80px 20px;
+    }
+}
 
 
 
 
-/*HEADER*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*EQUIPES*/
+/* Titre de la page Équipes avec une image de fond */
+.equipes-all h1 {
+    font-family: "Beaufort for LOL", sans-serif;
+    font-size: 34px;
+    color: #FFFFFF; /* Couleur du texte */
+    background-image: url('images/equipe.png'); /* Image de fond */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* Ajustement pour les écrans de bureau */
+@media (min-width: 768px) {
+    .equipes-all h1 {
+        font-size: 48px; /* Taille augmentée pour le desktop */
+        padding: 80px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Match*/
+.page-match {
+    font-family: "Beaufort for LOL", sans-serif;
+    font-size: 34px;
+    color: #FFFFFF; /* Couleur du texte */
+    background-image: url('images/Match.png'); /* Image de fond */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+/* Ajustement pour les écrans de bureau */
+@media (min-width: 768px) {
+    .equipes-all h1 {
+        font-size: 48px; /* Taille augmentée pour le desktop */
+        padding: 80px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*HEADER*/
 /* CSS pour le menu burger et la navigation mobile */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px 30px 20px;
-    background-color: #1C1C1C; /* Couleur de fond du header */
+    padding: 30px 10px 30px 10px;
+    background-color: #000000; /* Couleur de fond du header */
 }
 
 .logo {
@@ -207,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu {
     display: none; /* Cacher le menu par défaut */
     flex-direction: column;
-    background-color: #1C1C1C;
+    background-color: #000000;
     position: absolute;
     top: 60px;
     right: 0;
@@ -260,6 +495,16 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 20px;
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4,8 +4,8 @@
 get_header(); ?>
 
 <div class="classement-container">
-    <h1>Classement</h1>
-    <p>15/01 - 20/01</p>
+    <h1>Suivez les Leaders du Tournoi</h1>
+    <p>11/11 - 17/11</p>
 
     <table class="classement-table">
         <thead>

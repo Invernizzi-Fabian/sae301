@@ -17,10 +17,13 @@ get_header(); // Inclut l'en-tête du site
     <p>Après la création, un match vous sera attribué à une heure précise qu'il vous suffira de rejoindre en temps voulu pour jouer la partie.</p>
     <p>Après la première partie, un autre match sera prévu contre une autre équipe à une autre date définie, et ainsi de suite jusqu'à ce que toutes les équipes se soient affrontées entre elles.</p>
     <p>Si vous gagnez la partie, vous gagnez 1 point ; si vous perdez, vous perdez également 1 point. L’équipe avec le plus de points remporte le tournoi.</p>
+    
+    <img src="<?php echo get_template_directory_uri(); ?>/images/garen.png" alt="League of Legends" class="images" />
+
     <p>Ici, les équipes s'affrontent dans des compétitions intenses, suivant un format de tournoi structuré pour garantir un suivi rigoureux des performances.</p>
 
     <div class="home-conclusion">
-        <a href="<?php echo site_url('/les-equipes'); ?>">Voir les équipes</a>
+        <a class='bouton' href="<?php echo site_url('/equipes'); ?>">VOIR LES EQUIPES</a>
     </div>
 </div>
 
