@@ -1,0 +1,267 @@
+/*GENERAL*/
+
+/* Applique un fond sombre à la page */
+body {
+    background-color: #1C1C1C;
+    color: #FFFFFF; /* Texte en blanc */
+    font-family: Arial, sans-serif; /* Exemple de police, modifiable selon tes besoins */
+    margin: 0;
+}
+
+/* Assure la couleur blanche du texte pour la majorité des éléments */
+h1, h2, h3, h4, h5, h6, p, li, a {
+    color: #FFFFFF;
+}
+
+p, h2 {
+    margin : 0px 20px 0px 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 14px;
+    margin-top: 30px;
+}
+
+/* Lien - état normal et survol */
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Assure que le texte dans les boutons et les formulaires est aussi blanc */
+button, input, select, textarea {
+    color: #FFFFFF;
+    background-color: #333333; /* Optionnel : couleur de fond pour les formulaires */
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+/*POLICE*/
+
+/* Définition de la police Beaufort for LOL */
+@font-face {
+    font-family: "Beaufort for LOL";
+    src: url('fonts/BeaufortForLOL.woff2') format('woff2'),
+         url('fonts/BeaufortForLOL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Application de la police aux titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Beaufort for LOL", sans-serif;
+    color: #FFFFFF; /* Couleur blanche pour les titres */
+}
+
+/* Exemple spécifique pour le titre de la page d'accueil */
+.home-title {
+    font-family: "Beaufort for LOL", sans-serif;
+    font-size: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ACCUEIL*/
+
+/* Titre avec une image de fond */
+.home-title {
+    font-family: "Beaufort for LOL", sans-serif;
+    font-size: 34px;
+    color: #FFFFFF; /* Couleur du texte */
+    background-image: url('images/accueil.png'); /* Image de fond */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding : 60px 20px 60px 20px;
+    text-align: center;
+}
+
+/* Ajustement pour les écrans de bureau */
+@media (min-width: 768px) {
+    .home-title {
+        font-size: 48px; /* Taille augmentée pour le desktop */
+        padding: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HEADER*/
+/*HEADER*/
+/* CSS pour le menu burger et la navigation mobile */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px 30px 20px;
+    background-color: #1C1C1C; /* Couleur de fond du header */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 40px;  /* Ajuste la taille du logo selon tes préférences */
+    height: auto;
+    margin-right: 10px;  /* Espace entre le logo et le texte */
+}
+
+.logo-text-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: 'Beaufort for LOL', sans-serif;  /* Police personnalisée */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu Burger */
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.burger-line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Cacher les barres et les transformer en croix */
+.burger-menu.active #line1 {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.burger-menu.active #line2 {
+    opacity: 0; /* Rendre la barre du milieu invisible */
+}
+
+.burger-menu.active #line3 {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.nav-menu {
+    display: none; /* Cacher le menu par défaut */
+    flex-direction: column;
+    background-color: #1C1C1C;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav-menu.active {
+    display: flex; /* Afficher le menu quand "active" */
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Menu desktop */
+@media screen and (min-width: 768px) {
+    .burger-menu {
+        display: none; /* Cacher le burger menu en desktop */
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static;
+        background-color: transparent;
+    }
+
+    .menu-list {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .menu-list li {
+        margin-left: 20px;
+    }
+}
+
+
+
+
+

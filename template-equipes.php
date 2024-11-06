@@ -3,13 +3,7 @@
 
 get_header();
 
-// Vérifier si l'utilisateur est connecté
-if (!is_user_logged_in()) {
-    echo '<p>Vous devez être connecté pour créer une équipe.</p>';
-    wp_login_form();
-    get_footer();
-    exit;
-}
+
 
 // Traiter le formulaire de création d'équipe
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['creer_equipe_nonce']) && wp_verify_nonce($_POST['creer_equipe_nonce'], 'creer_equipe')) {
